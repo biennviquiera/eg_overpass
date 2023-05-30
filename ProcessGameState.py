@@ -3,7 +3,7 @@ import pandas as pd
 class ProcessGameState:
     def __init__(self, data):
         self.df = pd.read_parquet(data)
-
+    
     #raycasting algorithm to check if the point is within the boundary
     def point_in_boundary(self, boundary, point, minZ, maxZ):
         x, y, z = point
@@ -13,7 +13,6 @@ class ProcessGameState:
         inside = False
 
         p1x, p1y = boundary[0]
-
 
         for i in range(n + 1):
             p2x, p2y = boundary[i % n]
