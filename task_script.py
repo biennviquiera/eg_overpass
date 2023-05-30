@@ -98,8 +98,8 @@ def area_heatmap(df, team, side, area):
     plt.imshow(heatmap.T, origin='lower', extent=extent, cmap='YlOrRd')
     plt.colorbar(label='Number of points')
     # overlay image
-    img = mpimg.imread('map/de_overpass_radar.jpeg')  # replace with your image file
-    plt.imshow(img, extent=img_extent, alpha=0.2)  # adjust alpha to change overlay transparency
+    img = mpimg.imread('map/de_overpass_radar.jpeg')
+    plt.imshow(img, extent=img_extent, alpha=0.2)
 
     plt.title(f'de_overpass Position Heatmap: {team} On {side} At {area}')
     plt.show()
