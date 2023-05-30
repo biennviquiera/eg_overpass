@@ -16,7 +16,7 @@ maxZ = 421
 
 # ====  1  ====
 # b) Return whether or not each row falls within a provided boundary
-print(f"1B: All rows within boundary: {GAME.all_rows_within_boundary(list(boundary_vertices.values()), minZ, maxZ)}")
+print(f"1B: All rows within boundary: {GAME.all_rows_within_boundary(boundary_values, minZ, maxZ)}")
 
 # c) Extract the weapon classes from the inventory json column
 print(f"1C: All weapon classes: {GAME.get_weapon_classes()}")
