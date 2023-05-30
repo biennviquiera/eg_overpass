@@ -2,8 +2,6 @@ from ProcessGameState import ProcessGameState
 import numpy as np 
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-import seaborn as sns
-import pandas as pd
 
 
 GAME_FILE = 'data/game_state_frame_data.parquet'
